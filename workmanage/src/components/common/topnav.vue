@@ -1,6 +1,6 @@
 <template>
   <div id="webnav" class="clear">
-     <h1> 
+     <h1>  
          <img src="https://www.yuanjutong.com/upload/2016/09/30/20160930170315670.jpg" alt="">
      </h1>
      <ul class="navRight">
