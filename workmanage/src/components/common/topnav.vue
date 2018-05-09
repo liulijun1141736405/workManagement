@@ -4,7 +4,7 @@
          <img src="https://www.yuanjutong.com/upload/2016/09/30/20160930170315670.jpg" alt="">
      </h1>
      <ul class="navRight">
-         <li v-for="item in navList">
+         <li v-for="item in navlist">
              <div v-if="item.dropdown">
                  <el-dropdown>
                     <span class="el-dropdown-link">
@@ -31,7 +31,7 @@ export default {
   name: 'webnav',
   data () {
     return {
-        navList:[
+        navlist:[
             {
                 name:"首页",
                 path:"/"
