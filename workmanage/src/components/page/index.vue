@@ -28,14 +28,32 @@ export default {
             },
           ]
       }
+  },
+   beforCreated: function () {
+    // `this` 指向 vm 实例 
+    console.log("beforCreated")
+    
+  },
+   created: function () { 
+    console.log("created")
+    // `this` 指向 vm 实例
+    console.log(this.$route)
+    console.log(this.$route.params);  
+  },
+   beforMount: function () {
+    // `this` 指向 vm 实例 
+    console.log("beforMount")
+    
+  }, 
+   mounted: function () { 
+    // `this` 指向 vm 实例 
+    console.log("mounted")
+    
+  },
+  methods:{ 
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.content{
-  max-width:1090px;
-  margin:0 auto;
-}
-</style>
+ 

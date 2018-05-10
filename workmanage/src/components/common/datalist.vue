@@ -1,7 +1,7 @@
 <template>
   <div class="list">
       <el-row :gutter="20">
-        <el-col :span="6" v-for="(o, index) in ulList" :key="o.id"  >
+        <el-col :span="6" v-for="(o,index) in ulList" :key="o.id"  >
             <el-card :body-style="{ padding: '0px' }">
             <img :src="o.imgurl" class="image">
             <div style="padding: 14px;">

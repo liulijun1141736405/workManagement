@@ -32,15 +32,21 @@ export default {
   data () {
     return {
         navlist:[
+             {
+                name:"新增事项",
+               // path:{name:'addDate',query: { userId: 123 }}, 
+               //以get的方式拼接在链接后面。
+                path:{path:'/add',params: { userId: 123 }}, 
+                //通过this.$route.params能获取到路由传过来的参数  
+            },
             {
                 name:"首页",
                 path:"/"
             },
              {
                 name:"代办事务",
-                path:"/",
-                workNumber:"10"
-
+                path:"/schedule",
+                workNumber:"0"
             },
             {
                 name:"日程",
@@ -95,6 +101,7 @@ export default {
     line-height:30px;
     display:inline-block;
   }
+  .navRight a.router-link-exact-active{color:red;}
   #webnav{
       background:#6699FF;
       padding:15px 30px;
